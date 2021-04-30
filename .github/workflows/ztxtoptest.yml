@@ -1,4 +1,4 @@
-name: ztxtop-sync
+name: ztxtoptest-sync
 on:
   schedule:
     - cron: '25 */3 * * *'
