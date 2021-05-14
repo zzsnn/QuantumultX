@@ -107,8 +107,8 @@ function setWebhook() {
 //++++++++++++++++++++++++++++++++++++
 async function doUpdateSecrets() {
   // getData('/user/' + id + '/message', message);
-  const firebaseUrl = 'https://ariszy-3cf50-default-rtdb.firebaseio.com/';
-  const secret = 'y6o1QqPy0Wnqjdc6ycIwJ3KLhHt2b7e572KLDWFk';
+  const firebaseUrl = 'your firebase url/';
+  const secret = 'secret';
   const base = FirebaseApp.getDatabaseByUrl(firebaseUrl, secret);
   const getdata = base.getData("secret");
   const strbase64 = Utilities.base64Encode(JSON.stringify(getdata), Utilities.Charset.UTF_8);
