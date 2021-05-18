@@ -1,4 +1,4 @@
-name: Ariszy-sync
+name: AriszyTGBOT-sync
 on:
   schedule:
     - cron: '12 */3 * * *'
