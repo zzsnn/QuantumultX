@@ -1,12 +1,12 @@
-name: panghu999-sync
+name: Wenmoux-sync
 on:
   schedule:
-    - cron: '14 */6 * * *'
+    - cron: '1 */3 * * *'
   workflow_dispatch:
   watch:
     types: started
   repository_dispatch:
-    types: sync-panghu999-ningmeng
+    types: sync-Wenmoux-JavaScript
 jobs:
   repo-sync:
     env:
@@ -18,11 +18,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync panghu999-ningmeng
+      - name: sync Wenmoux-JavaScript
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/panghu999/ningmeng.git"
-          source_branch: "main"
-          destination_branch: "panghu999n"
+          source_repo: "https://github.com/Wenmoux/scripts.git"
+          source_branch: "master"
+          destination_branch: "Wenmoux"
           github_token: ${{ secrets.PAT }}
